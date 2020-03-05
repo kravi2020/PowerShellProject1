@@ -25,7 +25,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="NoteBook\" />
+    <Folder Include="NoteBook\OneNote_RecycleBin\" />
+  </ItemGroup>
   <ItemGroup>
     <Compile Include="ansi off to on.ps1" />
     <Compile Include="BackupSQLDB_DEVSQL2016_Daily.ps1" />
@@ -68,6 +71,25 @@
     <Compile Include="TEMPLATE-Backup-Encryption.ps1" />
     <Compile Include="Update-TeamViewer-code.ps1" />
     <Compile Include="write-progress example.ps1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NoteBook\0301.one" />
+    <Content Include="NoteBook\AOSTAGING.one" />
+    <Content Include="NoteBook\DB File Locations.one" />
+    <Content Include="NoteBook\Feb28.one" />
+    <Content Include="NoteBook\iDRAC-Staging.one" />
+    <Content Include="NoteBook\Jobs.one" />
+    <Content Include="NoteBook\MySQL_Links.one" />
+    <Content Include="NoteBook\OneNote_RecycleBin\New Section 1.one" />
+    <Content Include="NoteBook\OneNote_RecycleBin\OneNote_DeletedPages.one" />
+    <Content Include="NoteBook\OneNote_RecycleBin\Open Notebook.onetoc2" />
+    <Content Include="NoteBook\OneNote_RecycleBin\Quick Notes.one" />
+    <Content Include="NoteBook\Open Notebook.onetoc2" />
+    <Content Include="NoteBook\PowerShell.one" />
+    <Content Include="NoteBook\Quick Notes.one" />
+    <Content Include="NoteBook\sp_configure.one" />
+    <Content Include="NoteBook\SQL_Builds.one" />
+    <Content Include="NoteBook\URLs.one" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Target Name="Build" />
