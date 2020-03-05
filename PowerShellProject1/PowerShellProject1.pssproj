@@ -1,0 +1,75 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>6CAFC0C6-A428-4d30-A9F9-700E829FEA51</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MyApplication</RootNamespace>
+    <AssemblyName>MyApplication</AssemblyName>
+    <Name>PowerShellProject1</Name>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="ansi off to on.ps1" />
+    <Compile Include="BackupSQLDB_DEVSQL2016_Daily.ps1" />
+    <Compile Include="Blocking.ps1" />
+    <Compile Include="Check Installed Dot Net Version.ps1" />
+    <Compile Include="create new folder for new database.ps1" />
+    <Compile Include="create new folder for new db.ps1" />
+    <Compile Include="datanow-db-sizes.ps1" />
+    <Compile Include="Delete-List-of-SQL-Jobs.ps1" />
+    <Compile Include="Deploy.ps1" />
+    <Compile Include="FileSystemWatcher.ps1" />
+    <Compile Include="Function-Get-Uptime.ps1" />
+    <Compile Include="Generate-TSQL-To-Add-DB-Space.ps1" />
+    <Compile Include="get ad group members.ps1" />
+    <Compile Include="Get adgroup members to csv file.ps1" />
+    <Compile Include="Get-AdComputer Name.ps1" />
+    <Compile Include="Get-AdUser.ps1" />
+    <Compile Include="Get-All-Servers-Info.ps1" />
+    <Compile Include="Get-ClientWSUSSetting.ps1" />
+    <Compile Include="Get-ComputerInfo.ps1" />
+    <Compile Include="get-database-server-info.ps1" />
+    <Compile Include="Get-db-freespacedetails-all-databases.ps1" />
+    <Compile Include="Get-DB-FreeSpaceDetails.ps1" />
+    <Compile Include="Get-Hotfix-Patch.ps1" />
+    <Compile Include="Get-InstalledUpdates.ps1" />
+    <Compile Include="Get-NetworkStatistics.ps1" />
+    <Compile Include="Get-ProductKey.ps1" />
+    <Compile Include="Get-RestartEvents.ps1" />
+    <Compile Include="Get_sp_configure_multiple_servers.ps1" />
+    <Compile Include="LONG-6507.ps1" />
+    <Compile Include="New-AssetReport.ps1" />
+    <Compile Include="PowerShellProject1.ps1" />
+    <Compile Include="Prod Get Proc Creation Time.ps1" />
+    <Compile Include="Rename file names in a directory.ps1" />
+    <Compile Include="Run Script on List of Databases.ps1" />
+    <Compile Include="sample workflow example.ps1" />
+    <Compile Include="Script out agent jobs.ps1" />
+    <Compile Include="Send_UntitledToClip.ps1" />
+    <Compile Include="substring example.ps1" />
+    <Compile Include="TEMPLATE-Backup-Encryption.ps1" />
+    <Compile Include="Update-TeamViewer-code.ps1" />
+    <Compile Include="write-progress example.ps1" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Target Name="Build" />
+  <Import Project="$(MSBuildExtensionsPath)\PowerShell Tools for Visual Studio\PowerShellTools.targets" Condition="Exists('$(MSBuildExtensionsPath)\PowerShell Tools for Visual Studio\PowerShellTools.targets')" />
+</Project>
