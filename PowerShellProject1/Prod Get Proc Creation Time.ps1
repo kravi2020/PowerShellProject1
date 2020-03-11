@@ -19,8 +19,8 @@ select db_name() [DbName], name, type_desc, create_date from Dart2020_002.sys.ob
 #$srvname = Read-Host -Prompt 'Input your server  name'
 #$procname = Read-Host -Prompt 'Input procedure name'
 
-$srvname ="testsql2016.dart.local"
-$procname ="view_dart_users"
+$srvname ="dbclstage.dart.local"
+$procname ="pr_output_bnc"
 
 $databases = New-Object System.Collections.ArrayList
 

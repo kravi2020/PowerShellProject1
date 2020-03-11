@@ -1,13 +1,16 @@
-﻿$servername = "testsql2016.dart.local"
+﻿$servername = "dbclprod.dart.local"
 $scriptfilelocation ="G:\My Drive\LTQueries\Get-db-free-space.sql"
 
 $a = New-Object System.Collections.ArrayList
 
-$a =  Invoke-Sqlcmd -ServerInstance $servername -Database master -query "select name, state_desc, recovery_model_desc from sys.databases where database_id > 4"
+$a =  Invoke-Sqlcmd -ServerInstance $servername -Database master -query "select name, state_desc, recovery_model_desc from sys.databases where name in ('dartprod','dart2019_001','dart2019_002','dart2020_001','dart2020_002')"
+
+#$a =  Invoke-Sqlcmd -ServerInstance $servername -Database dartadmin -query "select shard_name as name from dartadmin.dbo.shard"
+
 
 Write-Host $a.Count
 
-$outfilename ="c:\temp\$servername-FreespaceDetails-$(GET-DATE -FORMAT yyyyMMdd_ss_mm).txt"
+$outfilename ="c:\temp\$servername-FreespaceDetails-$(GET-DATE -FORMAT yyyyMMdd_hh-mm-ss).txt"
 
 try {
 
